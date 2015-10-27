@@ -65,12 +65,14 @@ TODO
 
 ## R api:
 
-To generate a splash you need to source the R functions, and call `getSplash()`
+First install the R package splashR from this repository.
+
+To generate a splash you need to load the R library and call `getSplash()`
 on a dataframe or matrix with two numeric columns containing m/z and intensity:
 
 ```
     ## The caffeine example from the paper
-    source("R/splash.R")
+    library(splashR)
 
     ## The caffeine example from the paper
     caffeine <- cbind(mz=c(138.0641, 195.0815),
